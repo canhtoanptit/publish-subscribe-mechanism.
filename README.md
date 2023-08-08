@@ -17,7 +17,7 @@
 Handle incoming events: SALE_EVENT, REFILL_EVENT, LOW_STOCK_WARNING_EVENT, STOCK_LEVEL_OK_EVENT </br>
 Endpoints to use:
 * GET: /machine: return shared array machines
-* POST /trigger-event-sale: trigger event sale by publishing name, machine </br>
+* POST /sale: trigger event sale by publishing name, machine </br>
   Body:
   ```sh
   {
@@ -30,7 +30,7 @@ Endpoints to use:
    }
    ```
 
-* POST /trigger-event-refill: refill quantity </br>
+* POST /refill: refill quantity </br>
   Body:
   ```sh
   {
